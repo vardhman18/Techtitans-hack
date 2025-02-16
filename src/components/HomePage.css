@@ -1,0 +1,262 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.homepage {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e3a8a, #1e40af);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* 🎯 Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: #d1d5db;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.hero input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  margin-top: 1.5rem;
+  border-radius: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Search Icon */
+.hero .lucide-search {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero .lucide-search:hover {
+  color: white;
+}
+
+/* 📌 Agenda Section */
+.agenda {
+  padding: 4rem 2rem;
+}
+
+.agenda h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.agenda p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #d1d5db;
+}
+
+/* 🚀 Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 4rem 2rem;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature img {
+  width: 70px;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.feature p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.feature:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* 🎞️ Motion Graphics */
+.motion-graphics {
+  padding: 4rem 2rem;
+}
+
+.motion-graphics h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.motion-graphics img {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+/* 📌 Footer */
+.footer {
+  background: #1e3a8a;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero input {
+    font-size: 0.9rem;
+  }
+
+  .agenda h2,
+  .motion-graphics h2 {
+    font-size: 2rem;
+  }
+
+  .feature {
+    padding: 1rem;
+  }
+
+  .feature img {
+    width: 50px;
+  }
+
+  .feature p {
+    font-size: 1rem;
+  }
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Floating Chatbot Icon */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Chatbot Icon Image */
+.chatbot-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+/* Hover Effect */
+.chatbot-icon:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
+}
+
+/* Click Effect */
+.chatbot-icon:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0, 86, 179, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .chatbot-icon {
+      width: 50px;
+      height: 50px;
+      bottom: 15px;
+      right: 15px;
+  }
+  
+  .chatbot-icon img {
+      width: 35px;
+      height: 35px;
+  }
+}
