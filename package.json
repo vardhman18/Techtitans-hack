@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@shadcn/ui": "^0.0.4"
+    "@shadcn/ui": "^0.0.4",
+    "@types/stack-utils": "^2.0.3"
   }
 }

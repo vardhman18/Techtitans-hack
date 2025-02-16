@@ -7,6 +7,17 @@
   min-height: 100vh;
 }
 
+/* Website Portal Heading */
+.website-portal-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to right, #1e40af, #1e3a8a); /* Gradient to match homepage */
@@ -33,12 +44,12 @@
   opacity: 0.9;
 }
 
-/* Internship Grid Layout - 3 cards per row */
+/* Internship Grid Layout - 2 cards per row */
 .internship-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Three per row */
-  gap: 25px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Two per row */
+  gap: 30px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -48,17 +59,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0); /* Transparent white */
+  background: rgba(255, 255, 255, 0); /* Subtle transparency */
   border-radius: 12px;
   padding: 30px;
   width: 100%;
-  min-height: 180px; /* Increased height */
-  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.199);
+  min-height: 200px; /* Adjusted height */
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.26);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: white;
-  border: none; /* Removes border */
+  border: none;
 }
+
 
 .internship-card:hover {
   transform: scale(1.05);

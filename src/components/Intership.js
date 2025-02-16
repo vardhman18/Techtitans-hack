@@ -89,7 +89,9 @@ const Internship = () => {
 
       {/* Internship Websites Section */}
       <div className="internship-websites">
-        <h2>Explore Internship Portals</h2>
+      <div className="website-portal-heading">
+        Explore Internship Portals
+        </div>
         <div className="internship-grid">
           {internshipWebsites.map((website, index) => (
             <a
