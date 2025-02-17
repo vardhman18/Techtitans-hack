@@ -41,43 +41,10 @@ html {
   animation: slideUp 1.2s ease-in-out;
 }
 
-.hero input {
-  width: 100%;
-  max-width: 500px;
-  padding: 12px 20px;
-  margin-top: 1.5rem;
-  border-radius: 50px;
-  border: none;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  color: white;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
 
-.hero input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 
-.hero input:focus {
-  background: rgba(255, 255, 255, 0.3);
-}
 
-/* Search Icon */
-.hero .lucide-search {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  color: #e5e7eb;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
-}
 
-.hero .lucide-search:hover {
-  color: white;
-}
 
 /* 📌 Agenda Section */
 .agenda {
@@ -201,6 +168,7 @@ html {
     transform: translateY(0);
   }
 }
+
 /* Floating Chatbot Icon */
 .chatbot-icon {
   position: fixed;

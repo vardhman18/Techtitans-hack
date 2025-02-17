@@ -14,14 +14,7 @@ const Homepage = () => {
         <p className="text-lg text-gray-300 max-w-xl animate-slide-up">
           Stay updated with the latest campus news, events, internship opportunities, and tech trends – all in one place.
         </p>
-        <div className="relative max-w-2xl mx-auto mt-6 animate-fade-in">
-          <input
-            type="text"
-            className="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-sm"
-            placeholder="Search campus news, internships, resources..."
-          />
-          <Search className="absolute right-4 top-3 text-gray-300 hover:text-white" />
-        </div>
+        
       </section>
 
       {/* Agenda Section */}
@@ -77,7 +70,7 @@ const Homepage = () => {
       </section>
 
      
-     {/* Footer Section */}
+         {/* Footer Section */}
          <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
