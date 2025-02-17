@@ -14,8 +14,7 @@ const Homepage = () => {
         <p className="text-lg text-gray-300 max-w-xl animate-slide-up">
           Stay updated with the latest campus news, events, internship opportunities, and tech trends – all in one place.
         </p>
-        
-      </section>
+        </section>
 
       {/* Agenda Section */}
       <section className="agenda px-8 py-16 text-center">

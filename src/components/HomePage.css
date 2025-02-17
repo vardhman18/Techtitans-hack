@@ -42,10 +42,6 @@ html {
 }
 
 
-
-
-
-
 /* 📌 Agenda Section */
 .agenda {
   padding: 4rem 2rem;
@@ -112,7 +108,14 @@ html {
   border-radius: 12px;
 }
 
-
+/* 📌 Footer */
+.footer {
+  background: #1e3a8a;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #d1d5db;
+}
 
 /* 📱 Responsive Design */
 @media (max-width: 600px) {
@@ -168,7 +171,6 @@ html {
     transform: translateY(0);
   }
 }
-
 /* Floating Chatbot Icon */
 .chatbot-icon {
   position: fixed;
@@ -226,7 +228,7 @@ html {
   margin-top: 3rem;
   padding: 2rem 1rem;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.978); /* Semi-transparent black background */
+  background: rgb(0, 0, 0); /* Semi-transparent black background */
   backdrop-filter: blur(8px); /* Frosted glass effect */
   border-top: 2px solid #00bcd4; /* Add a border for style */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
@@ -252,7 +254,7 @@ html {
   font-weight: bold;
   margin-bottom: 1rem;
   color: #ffffff;
-  text-shadow: 0 1px 4px rgba(67, 67, 67, 0.347); /* Glow effect */
+  text-shadow: 0 1px 4px rgba(249, 249, 249, 0.062); /* Glow effect */
 }
 
 .footer-section ul {
