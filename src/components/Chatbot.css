@@ -1,7 +1,7 @@
 /* Chatbot Container */
 .chatbot {
     position: fixed;
-    bottom: 90px;
+    bottom: 90px; /* Ensures it's positioned above the footer */
     right: 20px;
     width: 100%;
     max-width: 380px;
@@ -14,8 +14,10 @@
     overflow: hidden;
     font-family: 'Inter', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 9999; /* Ensures it appears above other elements */
 }
 
+/* Chatbot Hover Effect */
 .chatbot:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
@@ -232,6 +234,12 @@
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Chatbot should always be above the footer */
+.chatbot-container {
+    position: relative;
+    z-index: 9999; /* Makes sure chatbot is above all content */
 }
 
 /* Responsive Design */
