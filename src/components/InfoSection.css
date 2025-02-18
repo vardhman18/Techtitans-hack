@@ -1,0 +1,139 @@
+/* Main Section - Full Width */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3efff;
+  padding: 50px 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Text Section */
+.info-text {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+.animated-text {
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.description {
+  font-size: clamp(14px, 3vw, 16px);
+  color: #444;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  font-size: clamp(14px, 3vw, 16px);
+  font-weight: bold;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.info-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px;
+}
+
+/* Ensure Images Fit Responsively */
+.animated-image {
+  width: auto;
+  height: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  opacity: 0;
+  transform: scale(1.1);
+  animation: fadeLoop 3s ease-in-out infinite;
+}
+
+/* Fade-in and Scale Animation for Image */
+@keyframes fadeLoop {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fade-in Animation for Text */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .info-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+  }
+
+  .info-text {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .info-image {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .info-section {
+    padding: 40px 5%;
+  }
+
+  .animated-image {
+    max-height: 250px;
+  }
+}
