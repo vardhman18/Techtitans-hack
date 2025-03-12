@@ -162,7 +162,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 YourWebsite. All Rights Reserved.</p>
+          <p>&copy; 2025 Campus Buzz. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

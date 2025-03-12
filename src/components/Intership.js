@@ -112,6 +112,48 @@ const Internship = () => {
           ))}
         </div>
       </div>
+        {/* Footer Section */}
+        <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4 className="footer-title">About Us</h4>
+            <p>
+              We are committed to providing the best resources, news, and
+              opportunities for developers and learners around the globe.
+            </p>
+          </div>
+          <div className="footer-section">
+            <h4 className="footer-title">Quick Links</h4>
+            <ul>
+              <li><a href="/technews">Tech News</a></li>
+              <li><a href="/internship">Internships</a></li>
+              <li><a href="/resources">Resources</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4 className="footer-title">Contact Us</h4>
+            <p>Email: support@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+          </div>
+          <div className="footer-section">
+            <h4 className="footer-title">Follow Us</h4>
+            <div className="social-icons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="./home/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="./home/twitter.png" alt="Twitter" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="./home/instagram.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Campus Buzz. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
